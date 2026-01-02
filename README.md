@@ -51,7 +51,10 @@ This project was built as part of my frontend learning journey.
 
 ##  Live Demo
 
-👉 _Coming soon_ (will be added after deployment)
+## Live Site
+
+Check out the app live on Netlify: [https://gemuani.netlify.app](https://gemuani.netlify.app)
+
 
 ---
 

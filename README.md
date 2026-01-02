@@ -1,4 +1,4 @@
-# 🍽️ Gemuani — Recipe Discovery App
+# Gemuani — Recipe Discovery App
 
 Gemuani is a modern, responsive recipe discovery web application built with React.  
 It allows users to explore random recipes, search for dishes, read blog content, and view detailed recipe instructions using data from the Spoonacular API.
@@ -7,7 +7,7 @@ This project was built as part of my frontend learning journey.
 
 ---
 
-## ✨ Features
+##  Features
 
 - Discover random recipes
 - Search recipes by keyword
@@ -19,7 +19,7 @@ This project was built as part of my frontend learning journey.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **React**
 - **React Router**
@@ -30,7 +30,7 @@ This project was built as part of my frontend learning journey.
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Home Page
 ![Home](./screenshots/home.png)
@@ -49,7 +49,7 @@ This project was built as part of my frontend learning journey.
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
 👉 _Coming soon_ (will be added after deployment)
 
@@ -59,4 +59,4 @@ This project was built as part of my frontend learning journey.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/gemuani.git
+git clone https://github.com/tamar-natchkebia/recipe.git

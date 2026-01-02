@@ -8,13 +8,18 @@ export default function Recipes({ searchQuery }) {
   useEffect(() => {
     async function fetchRecipes() {
       try {
-        let url = "";
+        const API_KEY = import.meta.env.VITE_SPOONACULAR_API_KEY;
 
-        if (searchQuery) {
-          url = `https://api.spoonacular.com/recipes/complexSearch?query=${searchQuery}&number=6&addRecipeInformation=true&apiKey=e67e177e66e0412bb818818eb2f841ce`;
-        } else {
-          url = `https://api.spoonacular.com/recipes/random?number=6&apiKey=e67e177e66e0412bb818818eb2f841ce`;
-        }
+let url;
+
+if (searchQuery) {
+  url = `https://api.spoonacular.com/recipes/complexSearch?query=${searchQuery}&number=6&addRecipeInformation=true&apiKey=${API_KEY}`;
+} else {
+  url = `https://api.spoonacular.com/recipes/random?number=6&apiKey=${API_KEY}`;
+}
+
+       
+       
 
         const res = await fetch(url);
         const data = await res.json();

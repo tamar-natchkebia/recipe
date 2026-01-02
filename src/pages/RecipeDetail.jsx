@@ -6,20 +6,22 @@ export default function RecipeDetail() {
   const { id } = useParams();
   const [recipe, setRecipe] = useState(null);
 
-  useEffect(() => {
-    async function fetchRecipe() {
-      try {
-        const res = await fetch(
-          `https://api.spoonacular.com/recipes/${id}/information?apiKey=e67e177e66e0412bb818818eb2f841ce`
-        );
-        const data = await res.json();
-        setRecipe(data);
-      } catch (err) {
-        console.error("Error fetching recipe detail:", err);
-      }
+useEffect(() => {
+  async function fetchRecipe() {
+    try {
+      const API_KEY = import.meta.env.VITE_SPOONACULAR_API_KEY; // <-- use env variable
+      const res = await fetch(
+        `https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}`
+      );
+      const data = await res.json();
+      setRecipe(data);
+    } catch (err) {
+      console.error("Error fetching recipe detail:", err);
     }
-    fetchRecipe();
-  }, [id]);
+  }
+  fetchRecipe();
+}, [id]);
+
 
   if (!recipe)
     return (
